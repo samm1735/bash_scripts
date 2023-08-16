@@ -11,7 +11,7 @@ create_flask_structure(){
 
 	touch app.py models.py forms.py requirements.txt
 
-	touch static/css/style.css static/js/script.js
+	touch static/css/styles.css static/js/script.js
 	
 	touch templates/layout.html
 	touch templates/indexhtml
@@ -23,7 +23,7 @@ create_flask_structure(){
 
 	touch requirements.txt
 
-	echo -e "flask\nflask_sqlalchemy\nflask_migrate\nflask_mail\nflask_wtf\npsycopg2\nflask_restful\nflask_jwt_extended\nflask_cors\nflask_bcrypt\nflask_marshmallow\nflask_socketio\nflask_admin\nflask_login\nflask_redis\nflask_caching\nflask_testing\nselenium" > requirements.txt
+	echo -e "flask\nflask_sqlalchemy\nflask_migrate\nflask_mail\nflask_login\nflask_security\nflask_admin\nflask_wtf\npsycopg2\nflask_restful\nflask_jwt_extended\nflask_cors\nflask_bcrypt\nflask_marshmallow\nflask_socketio\nflask_admin\nflask_login\nflask_redis\nflask_caching\nflask_testing\nselenium" > requirements.txt
 
 	# pip list
   while read -r package; do
